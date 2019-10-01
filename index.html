@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Канцтовары.рф</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__container">
+          <div class="page-header__inner">
+            <a href="#" class="logo"><img src="img/logo.png" alt="Канцтовары"></a>
+            <div class="header-feedback">
+              <div class="header-feedback__title">Есть вопросы?</div>
+              <a href="#modal-feedback" data-toggle="modal" class="btn btn--shadow">Оставить сообщение</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main" class="page__container">
+
+        <div class="intro">
+          <div class="intro__container">
+            <div class="intro__inner">
+              <div class="intro__map">
+                <img src="img/map.png" alt="">
+              </div>
+              <div class="intro__board">
+                <div class="map-board">
+                  <div class="map-board__card">
+                    <h2 class="map-board__card-title">Златоуст</h2>
+                    <ul class="map-board__card-list">
+                      <li>ул. Февральская, 283 стр., 15 офис</li>
+                      <li>8 928 415-15-15</li>
+                      <li>krasnodar@office-klass.ru</li>
+                      <li>Открыто с 9:00 по 18:00</li>
+                    </ul>
+                  </div>
+                  <div class="map-board__card">
+                    <h2 class="map-board__card-title">Челябинск</h2>
+                    <ul class="map-board__card-list">
+                      <li>ул. Февральская, 283 стр., 15 офис</li>
+                      <li>8 928 415-15-15</li>
+                      <li>krasnodar@office-klass.ru</li>
+                      <li>Открыто с 9:00 по 18:00</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts-box">
+          <div class="contacts-box__container">
+            <div class="contacts-box__inner">
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Златоуст</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Челябинск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Хабаровск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Пятигорск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Хабаровск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Самара</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Красноярск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Самара</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Красноярск</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-box__card">
+                <div class="contacts-box__card-inner">
+                  <h3 class="contacts-box__card-title">Самара</h3>
+                  <ul class="contacts-box__card-info">
+                    <li>ул. Февральская, 283 стр., 15 офис</li>
+                    <li>8 928 415-15-15</li>
+                    <li>krasnodar@office-klass.ru</li>
+                    <li>Открыто с 9:00 по 18:00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__container">
+          <div class="page-footer__inner">
+            <div class="footer-contacts">
+              <div class="footer-contacts__item">Центральный офис: ул. Февральская, 283 стр., 15 офис</div>
+              <div class="footer-contacts__item"><a href="tel:+79284151515"><i class="icon call-icon"></i>8 928 415-15-15</a></div>
+              <div class="footer-contacts__item"><a href="mailto:krasnodar@office-klass.ru"><i class="icon email-icon"></i>krasnodar@office-klass.ru</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <div id="modal-feedback" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Мы с радостью ответим на все ваши предложения</h4>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <div class="row">
+              <div class="col">
+                <label class="field-text">
+                  <span class="field-text__name">Имя</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Например: Владимир" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефона</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" placeholder="Например: 8962-428-44-55" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Электронная почта</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" placeholder="Например: vladimir@mail.ru" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="col">
+                <label class="field-text">
+                  <span class="field-text__name">Ваше сообщение</span>
+                  <span class="field-text__input-wrap">
+                    <textarea class="field-text__input" placeholder="Ваши предложения, вопросы и пожелания" rows="9"></textarea>
+                  </span>
+                </label>
+                <div class="field-actions">
+                  <button class="btn">Оставить сообщение</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
