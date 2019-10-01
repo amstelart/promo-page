@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока contacts-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container;
+  }
+
+  &__inner {
+    @include row;
+  }
+
+  &__card {
+    @include col();
+    @include col(sm, 6);
+    @include col(md, 4);
+    @include col(lg, 4);
+    @include col(xl, 3);
+
+    @media (min-width: $screen-xxl) {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+
+  &__card-title {
+    color: $color-main;
+  }
+  &__card-info {
+    list-style: none;
+    padding: 0;
+  }
+}

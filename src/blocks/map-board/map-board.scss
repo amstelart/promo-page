@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока map-board, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.map-board {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+  border: 3px solid $color-main;
+  border-radius: 30px;
+  padding: 10%;
+
+  &__card {
+    margin-bottom: 30px;
+  }
+  &__card-title {
+    color: $color-main;
+    margin: 0;
+  }
+  &__card-list {
+    list-style: none;
+    padding: 0;
+  }
+}
